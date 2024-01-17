@@ -1,5 +1,4 @@
-id = "개인 학번"
-pw = "개인 비밀번호"
+
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -8,6 +7,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from openpyxl import Workbook
 from time import sleep
+from data import userid, userpassword
+
+id = userid
+pw = userpassword
 
 # 엑셀 파일 열기
 wb = Workbook()
